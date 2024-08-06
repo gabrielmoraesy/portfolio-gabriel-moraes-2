@@ -20,6 +20,16 @@ const config = {
     extend: {
       colors: {
         gray: "rgba(39, 39, 42, 1)",
+        "gray-scale-50": "#F3F3F3",
+        "gray-scale-100": "#DDDDDD",
+        "gray-scale-200": "#C6C6C6",
+        "gray-scale-300": "#B0B0B0",
+        "gray-scale-400": "#9B9B9B",
+        "gray-scale-500": "#868686",
+        "gray-scale-600": "#727272",
+        "gray-scale-700": "#5E5E5E",
+        "gray-scale-800": "#4B4B4B",
+        "gray-scale-900": "#393939",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
