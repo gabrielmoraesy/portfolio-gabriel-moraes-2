@@ -2,7 +2,7 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 
 const HomeSection = () => {
     return (
-        <section id="home" className="pb-16 max-w-[1320px] mx-auto flex flex-col justify-center items-center gap-5 h-[95vh] bg-black">
+        <section id="home" className="max-w-[1320px] mx-auto flex flex-col justify-center items-center gap-5 h-[95vh] bg-black">
             <Avatar className="w-[160px] h-[160px]">
                 <AvatarImage src="https://github.com/gabrielmoraesy.png" />
                 <AvatarFallback>CN</AvatarFallback>

@@ -45,7 +45,7 @@ const AboutSection = () => {
         <>
             <div className="w-full h-[80px] bg-gradient-to-r from-purple-500 via-red-500 to-yellow-500" />
 
-            <section id="home" className="pb-16 max-w-[1320px] mx-auto h-[95vh] flex justify-center items-center gap-20 bg-black border-b border-white">
+            <section id="about" className="max-w-[1320px] mx-auto h-[95vh] flex justify-center items-center gap-20 bg-black">
                 <div className="flex-1">
                     <h1 className="text-2xl font-bold">Formação</h1>
                     {formations.map(formation =>

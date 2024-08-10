@@ -1,10 +1,6 @@
-import {
-  Tooltip,
-  TooltipContent,
-  TooltipProvider,
-  TooltipTrigger,
-} from "@/components/ui/tooltip"
+import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip"
 import { Github, Gitlab, Instagram, Linkedin } from "lucide-react"
+
 import { ModeToggle } from "../ThemeProvider/fragments/ModeToggle"
 
 const Navbar = () => {
@@ -14,9 +10,9 @@ const Navbar = () => {
         <h1 className="text-xl uppercase text-gradient-color">Gabriel Moraes</h1>
         <div className="flex gap-4 items-center">
           <div className="flex gap-6 uppercase text-sm">
-            <a href="">Início</a>
-            <a href="">Sobre</a>
-            <a href="">Projetos</a>
+            <a href="#home">Início</a>
+            <a href="#about">Sobre</a>
+            <a href="#projects">Projetos</a>
             <a href="">Conhecimentos</a>
             <a href="">Contato</a>
           </div>
