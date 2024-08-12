@@ -10,6 +10,15 @@ const config = {
 	],
   prefix: "",
   theme: {
+    screens: {
+      sm: "640px",
+      md: "768px",
+      ms1000: "1000px",
+      ms1024: "1024px",
+      ms1100: "1100px",
+      ms1200: "1200px",
+      ms1300: "1300px"
+    },
     container: {
       center: true,
       padding: "2rem",
@@ -63,6 +72,10 @@ const config = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+      },
+      fontFamily: {
+        inter: ["Inter", "sans-serif"],
+        poppins: ["Poppins", "sans-serif"],
       },
       borderRadius: {
         lg: "var(--radius)",
