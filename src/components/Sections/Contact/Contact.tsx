@@ -2,7 +2,7 @@ import { Linkedin, Mail, Smartphone } from "lucide-react";
 
 const ContactSection = () => {
     return (
-        <section id="contact" className="max-w-[1320px] px-6 mx-auto flex flex-col justify-center items-start gap-4 py-20">
+        <div id="contact" className="max-w-[1320px] px-6 mx-auto flex flex-col justify-center items-start gap-4 py-10">
             <div className="flex flex-wrap">
                 <div className='flex flex-col leading-10'>
                     <h1 className='text-2xl sm:text-3xl'>Entre em</h1>
@@ -31,7 +31,7 @@ const ContactSection = () => {
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
     );
 }
 

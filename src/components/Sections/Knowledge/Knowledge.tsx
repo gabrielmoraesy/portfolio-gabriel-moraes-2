@@ -64,7 +64,7 @@ const technologies = [
 ]
 const KnowledgeSection = () => {
     return (
-        <section id="knowledge" className="max-w-[1320px] px-6 mx-auto flex flex-col justify-center items-start gap-6 min-h-[95vh]">
+        <section id="knowledge" className="max-w-[1320px] px-6 mx-auto flex flex-col justify-center items-start gap-6 min-h-[30vh]">
             <div className='flex flex-col leading-10'>
                 <h1 className='text-2xl sm:text-3xl'>Conhecimentos e</h1>
                 <h1 className='text-2xl sm:text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-500 via-red-500 to-yellow-500'>Tecnologias.</h1>

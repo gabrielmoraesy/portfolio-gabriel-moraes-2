@@ -3,29 +3,20 @@ import { Github, Gitlab, Instagram, Linkedin, Menu } from "lucide-react"
 
 import { ModeToggle } from "../ThemeProvider/fragments/ModeToggle"
 
-import {
-  Sheet,
-  SheetContent,
-  SheetDescription,
-  SheetHeader,
-  SheetTitle,
-  SheetTrigger,
-} from "@/components/ui/sheet"
 import MenuMobile from "../MenuMobile/MenuMobile"
-
 
 const Navbar = () => {
   return (
-    <nav className="max-w-[1320px] mx-auto flex justify-between items-center h-[8vh] px-4" id="home">
+    <nav className="max-w-[1320px] mx-auto flex justify-between items-center h-[8vh] px-6 ms1000:px-4" id="home">
       <h1 className="text-lg ms1000:text-2xl font-bold uppercase bg-clip-text text-transparent bg-gradient-to-r from-purple-500 via-red-500 to-yellow-500">Gabriel Moraes</h1>
 
       <div className="flex gap-4 items-center">
         <div className="gap-3 uppercase text-sm hidden ms1000:flex">
-          <a href="#home" className="hover:bg-gray p-2 rounded-lg">Início</a>
-          <a href="#about" className="hover:bg-gray p-2 rounded-lg">Sobre</a>
-          <a href="#projects" className="hover:bg-gray p-2 rounded-lg">Projetos</a>
-          <a href="#knowledge" className="hover:bg-gray p-2 rounded-lg">Conhecimentos</a>
-          <a href="#contact" className="hover:bg-gray p-2 rounded-lg">Contato</a>
+          <a href="#home" className="dark:hover:bg-gray hover:bg-gray-scale-100 p-2 rounded-lg">Início</a>
+          <a href="#about" className="dark:hover:bg-gray hover:bg-gray-scale-100 p-2 rounded-lg">Sobre</a>
+          <a href="#projects" className="dark:hover:bg-gray hover:bg-gray-scale-100 p-2 rounded-lg">Projetos</a>
+          <a href="#knowledge" className="dark:hover:bg-gray hover:bg-gray-scale-100 p-2 rounded-lg">Conhecimentos</a>
+          <a href="#contact" className="dark:hover:bg-gray hover:bg-gray-scale-100 p-2 rounded-lg">Contato</a>
         </div>
 
         <div className="bg-[#ccc] h-4 w-[1px] hidden ms1000:flex" />
@@ -36,7 +27,7 @@ const Navbar = () => {
               <ModeToggle />
 
               <Tooltip>
-                <TooltipTrigger className="hover:bg-gray p-2 rounded-lg">
+                <TooltipTrigger className="dark:hover:bg-gray hover:bg-gray-scale-100 p-2 rounded-lg">
                   <Gitlab />
                 </TooltipTrigger>
                 <TooltipContent>
@@ -45,7 +36,7 @@ const Navbar = () => {
               </Tooltip>
 
               <Tooltip>
-                <TooltipTrigger className="hover:bg-gray p-2 rounded-lg">
+                <TooltipTrigger className="dark:hover:bg-gray hover:bg-gray-scale-100 p-2 rounded-lg">
                   <Github />
                 </TooltipTrigger>
                 <TooltipContent>
@@ -54,7 +45,7 @@ const Navbar = () => {
               </Tooltip>
 
               <Tooltip>
-                <TooltipTrigger className="hover:bg-gray p-2 rounded-lg">
+                <TooltipTrigger className="dark:hover:bg-gray hover:bg-gray-scale-100 p-2 rounded-lg">
                   <Linkedin />
                 </TooltipTrigger>
                 <TooltipContent>
@@ -63,7 +54,7 @@ const Navbar = () => {
               </Tooltip>
 
               <Tooltip>
-                <TooltipTrigger className="hover:bg-gray p-2 rounded-lg">
+                <TooltipTrigger className="dark:hover:bg-gray hover:bg-gray-scale-100 p-2 rounded-lg">
                   <Instagram />
                 </TooltipTrigger>
                 <TooltipContent>
@@ -73,7 +64,7 @@ const Navbar = () => {
             </TooltipProvider>
           </div>
 
-          <MenuMobile>      
+          <MenuMobile>
             <Menu />
           </MenuMobile>
         </div>
