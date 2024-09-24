@@ -54,16 +54,16 @@ const ProjectsSection = () => {
     ]
 
     return (
-        <section id="projects" className="max-w-[1320px] px-6 mx-auto flex flex-col justify-center items-start gap-6 min-h-[95vh]">
+        <section id="projects" className="max-w-[1320px] px-6 mx-auto flex flex-col justify-center items-start gap-6 min-h-[95vh] py-10">
             <div className='flex flex-col leading-10'>
-                <h1 className='text-[36px]'>Confira meus</h1>
-                <h1 className='text-[36px] font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-500 via-red-500 to-yellow-500'>Projetos.</h1>
+                <h1 className='text-2xl sm:text-3xl'>Confira meus</h1>
+                <h1 className='text-2xl sm:text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-500 via-red-500 to-yellow-500'>Projetos.</h1>
             </div>
-            <div className="grid grid-cols-1 ms1000:grid-cols-2 ms1300:grid-cols-3 gap-3">
+            <div className="flex flex-wrap gap-3">
                 {projects.map(project =>
-                    <div className='group w-[420px] h-auto relative z-20'>
+                    <div className='group h-auto relative z-20'>
                         <div className='w-full h-full flex-row gap-2 transition-opacity hover:opacity-50 cursor-pointer group-hover:opacity-50'>
-                            <Image src={project.image?.src} className='w-[420px] h-[300px] object-cover object-center' width={400} height={300} quality={100} alt="imagem do projeto" />
+                            <Image src={project.image?.src} className='object-cover object-center' width={400} height={300} quality={100} alt="imagem do projeto" />
                         </div>
 
                         <div className='group absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 gap-8 opacity-0 group-hover:opacity-100 transition-opacity flex'>

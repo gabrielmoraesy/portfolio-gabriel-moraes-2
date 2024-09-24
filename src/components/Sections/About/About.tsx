@@ -41,39 +41,41 @@ const AboutSection = () => {
             <div className="w-full h-[70px] bg-gradient-to-r from-purple-500 via-red-500 to-yellow-500" />
 
             <section id="about" className="max-w-[1320px] mx-auto flex ms1200:flex-row flex-col justify-center items-start gap-20 px-6 py-20">
-                <div className="flex-1">
-                    <h1 className="text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-500 via-red-500 to-yellow-500">Formação</h1>
-                    {formations.map(formation =>
-                        <div className="flex flex-col gap-2 p-3 border-b border-gray-scale-500">
-                            <div>
-                                <h1 className="dark:text-white text-xl font-bold">{formation.institution}</h1>
-                                <h2 className="dark:text-gray-scale-400">{formation.description}</h2>
+                <div className="w-full flex flex-col sm:flex-row gap-5">
+                    <div className="flex-1">
+                        <h1 className="text-2xl sm:text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-500 via-red-500 to-yellow-500">Formação</h1>
+                        {formations.map(formation =>
+                            <div className="flex flex-col gap-2 p-3 border-b border-gray-scale-500">
+                                <div>
+                                    <h1 className="dark:text-white text-xl font-bold">{formation.institution}</h1>
+                                    <h2 className="dark:text-gray-scale-400">{formation.description}</h2>
+                                </div>
+                                <div className="flex gap-1.5 items-center">
+                                    <div className="w-[5px] h-[5px] rounded-full bg-gray-scale-400" />
+                                    <p className="dark:text-gray-scale-400">{formation.startDate} - {formation.endDate}</p>
+                                    <p className="dark:text-gray-scale-400">({formation.status})</p>
+                                </div>
                             </div>
-                            <div className="flex gap-1.5 items-center">
-                                <div className="w-[5px] h-[5px] rounded-full bg-gray-scale-400" />
-                                <p className="dark:text-gray-scale-400">{formation.startDate} - {formation.endDate}</p>
-                                <p className="dark:text-gray-scale-400">({formation.status})</p>
+                        )}
+                    </div>
+                    <div className="flex-1">
+                        <h1 className="text-2xl sm:text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-500 via-red-500 to-yellow-500">Experiências</h1>
+                        {experiences.map(experience =>
+                            <div className="flex flex-col flex-wrap gap-2 p-3 border-b border-gray-scale-500">
+                                <div className="flex flex-wrap">
+                                    <h1 className="dark:text-white text-xl font-bold">{experience.institution}</h1>
+                                    <h2 className="dark:text-gray-scale-400">{experience.description}</h2>
+                                </div>
+                                <div className="flex gap-1.5 items-center">
+                                    <div className="w-[5px] h-[5px] rounded-full bg-gray-scale-400" />
+                                    <p className="dark:text-gray-scale-400">{experience.startDate} - {experience.endDate}</p>
+                                </div>
+                                <div className="flex flex-wrap gap-1.5 items-center">
+                                    {experience.technologies.map(tech => <div className="dark:text-gray-scale-400 text-xs">{tech}</div>)}
+                                </div>
                             </div>
-                        </div>
-                    )}
-                </div>
-                <div className="flex-1">
-                    <h1 className="text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-500 via-red-500 to-yellow-500">Experiências</h1>
-                    {experiences.map(experience =>
-                        <div className="flex flex-col gap-2 p-3 border-b border-gray-scale-500">
-                            <div>
-                                <h1 className="dark:text-white text-xl font-bold">{experience.institution}</h1>
-                                <h2 className="dark:text-gray-scale-400">{experience.description}</h2>
-                            </div>
-                            <div className="flex gap-1.5 items-center">
-                                <div className="w-[5px] h-[5px] rounded-full bg-gray-scale-400" />
-                                <p className="dark:text-gray-scale-400">{experience.startDate} - {experience.endDate}</p>
-                            </div>
-                            <div className="flex gap-1.5 items-center">
-                                {experience.technologies.map(tech => <div className="dark:text-gray-scale-400 text-xs">{tech}</div>)}
-                            </div>
-                        </div>
-                    )}
+                        )}
+                    </div>
                 </div>
             </section>
         </>
