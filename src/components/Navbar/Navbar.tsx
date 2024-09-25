@@ -8,7 +8,7 @@ import MenuMobile from "../MenuMobile/MenuMobile"
 const Navbar = () => {
   return (
     <nav className="max-w-[1320px] mx-auto flex justify-between items-center h-[8vh] px-6 ms1000:px-4" id="home">
-      <h1 className="text-lg ms1000:text-2xl font-bold uppercase bg-clip-text text-transparent bg-gradient-to-r from-purple-500 via-red-500 to-yellow-500">Gabriel Moraes</h1>
+      <h1 className="text-lg ms1000:text-2xl font-bold uppercase bg-clip-text text-transparent bg-gradient-to-r from-red-600 via-purple-600 to-blue-700">Gabriel Moraes</h1>
 
       <div className="flex gap-4 items-center">
         <div className="gap-3 uppercase text-sm hidden ms1000:flex">

@@ -6,7 +6,7 @@ const ContactSection = () => {
             <div className="flex flex-wrap">
                 <div className='flex flex-col leading-10'>
                     <h1 className='text-2xl sm:text-3xl'>Entre em</h1>
-                    <h1 className='text-2xl sm:text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-500 via-red-500 to-yellow-500'>Contato.</h1>
+                    <h1 className='text-2xl sm:text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-red-600 via-purple-600 to-blue-700'>Contato.</h1>
                 </div>
                 <div className="flex flex-col flex-wrap gap-4">
                     <p className="dark:text-gray-scale-500 text-wrap">

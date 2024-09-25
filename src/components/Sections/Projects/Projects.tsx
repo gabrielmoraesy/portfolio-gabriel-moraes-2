@@ -57,7 +57,7 @@ const ProjectsSection = () => {
         <section id="projects" className="max-w-[1320px] px-6 mx-auto flex flex-col justify-center items-start gap-6 min-h-[95vh] py-10">
             <div className='flex flex-col leading-10'>
                 <h1 className='text-2xl sm:text-3xl'>Confira meus</h1>
-                <h1 className='text-2xl sm:text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-500 via-red-500 to-yellow-500'>Projetos.</h1>
+                <h1 className='text-2xl sm:text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-red-600 via-purple-600 to-blue-700'>Projetos.</h1>
             </div>
             <div className="flex flex-wrap gap-3">
                 {projects.map(project =>

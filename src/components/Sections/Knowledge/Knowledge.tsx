@@ -67,7 +67,7 @@ const KnowledgeSection = () => {
         <section id="knowledge" className="max-w-[1320px] px-6 mx-auto flex flex-col justify-center items-start gap-6 min-h-[30vh]">
             <div className='flex flex-col leading-10'>
                 <h1 className='text-2xl sm:text-3xl'>Conhecimentos e</h1>
-                <h1 className='text-2xl sm:text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-500 via-red-500 to-yellow-500'>Tecnologias.</h1>
+                <h1 className='text-2xl sm:text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-red-600 via-purple-600 to-blue-700'>Tecnologias.</h1>
             </div>
             <div className="w-full flex justify-center flex-wrap gap-2">
                 {technologies.map(tech => <div className="max-[416px]:w-full w-[180px] relative flex flex-col items-center justify-center gap-2 p-2 py-4 rounded-lg bg-[#ececec] dark:bg-[#121212]">
