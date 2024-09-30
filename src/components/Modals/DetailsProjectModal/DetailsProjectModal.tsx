@@ -15,21 +15,15 @@ const DetailsProjectModal = ({ children, project }: IDetailsProjectModal) => {
     return (
         <Dialog>
             <DialogTrigger asChild>{children}</DialogTrigger>
-            <DialogContent className="max-w-[85vw] bg-[#101010] sm:max-w-[600px]">
+            <DialogContent className="max-w-[85vw] sm:max-w-[600px]">
                 <DialogHeader className="flex w-full flex-row items-center justify-between border-b-[2px] border-gray-border pb-5">
-                    <h2 className="text-2xl">Detalhes do projeto</h2>
-                    <DialogClose>
-                        <X
-                            size={24}
-                            className="text-[#979797] duration-200 hover:text-white"
-                        />
-                    </DialogClose>
+                    <h2 className="text-xl">Detalhes do projeto</h2>
                 </DialogHeader>
                 <div className="relative flex flex-col items-center gap-3">
-                    <h1>{project.title}</h1>
-                    <p>{project.description}</p>
+                    <h1 className="text-xl sm:text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-red-600 via-purple-600 to-blue-700">{project.title}</h1>
+                    <p className="text-sm">{project.description}</p>
 
-                    <div className="flex gap-1.5 text-[#ccc]">
+                    <div className="flex flex-wrap gap-1.5">
                         {project.technologies.map(tech => <p>{tech}</p>)}
                     </div>
                 </div>

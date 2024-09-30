@@ -28,7 +28,9 @@ const Navbar = () => {
 
               <Tooltip>
                 <TooltipTrigger className="dark:hover:bg-gray hover:bg-gray-scale-100 p-2 rounded-lg">
-                  <Gitlab />
+                  <a href="https://gitlab.com/gabrielmoraesy" target="_blank">
+                    <Gitlab />
+                  </a>
                 </TooltipTrigger>
                 <TooltipContent>
                   <p>Gitlab</p>
@@ -37,7 +39,9 @@ const Navbar = () => {
 
               <Tooltip>
                 <TooltipTrigger className="dark:hover:bg-gray hover:bg-gray-scale-100 p-2 rounded-lg">
-                  <Github />
+                  <a href="https://github.com/gabrielmoraesy" target="_blank">
+                    <Github />
+                  </a>
                 </TooltipTrigger>
                 <TooltipContent>
                   <p>Github</p>
@@ -46,7 +50,9 @@ const Navbar = () => {
 
               <Tooltip>
                 <TooltipTrigger className="dark:hover:bg-gray hover:bg-gray-scale-100 p-2 rounded-lg">
-                  <Linkedin />
+                  <a href="https://www.linkedin.com/in/gabrielmoraespires/" target="_blank">
+                    <Linkedin />
+                  </a>
                 </TooltipTrigger>
                 <TooltipContent>
                   <p>LinkedIn</p>
@@ -55,7 +61,9 @@ const Navbar = () => {
 
               <Tooltip>
                 <TooltipTrigger className="dark:hover:bg-gray hover:bg-gray-scale-100 p-2 rounded-lg">
-                  <Instagram />
+                  <a href="https://www.instagram.com/moraesdev/" target="_blank">
+                    <Instagram />
+                  </a>
                 </TooltipTrigger>
                 <TooltipContent>
                   <p>Instagram</p>
