@@ -73,7 +73,7 @@ const About = () => {
                                     <h1 className="text-lg font-semibold">Ensino Médio Técnico em Informática</h1>
                                     <div className="p-2 rounded-lg bg-gray-scale-100 w-[102px] dark:text-black">2021 - 2023</div>
                                     <p>Escola Técnica Rezende Rammel</p>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos dolor nisi fugit nostrum accusamus numquam ea accusantium suscipit veniam aliquid a ut, blanditiis odio assumenda maxime, perspiciatis et? Excepturi, temporibus!</p>
+                                    <p>Fiz o meu ensino médio junto com o técnico em informática onde tive a oportunidade de aprender sobre desenvolvimento front-end e back-end.</p>
                                 </div>
                             </div>
 
@@ -86,7 +86,7 @@ const About = () => {
                                     <h1 className="text-lg font-semibold">Graduação Ánalise e Desenvolvimento de Sistemas</h1>
                                     <div className="p-2 rounded-lg bg-gray-scale-100 w-[102px] dark:text-black">2024 - 2026</div>
                                     <p>Centro Universitário Carioca</p>
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos dolor nisi fugit nostrum accusamus numquam ea accusantium suscipit veniam aliquid a ut, blanditiis odio assumenda maxime, perspiciatis et? Excepturi, temporibus!</p>
+                                    <p>A Universidade Unicarioca me ajudou a aprender sobre tecnologia. Tive a oportunidade de aprender desenvolvimento front-end, back-end e mobile.</p>
                                 </div>
                             </div>
                         </div>
