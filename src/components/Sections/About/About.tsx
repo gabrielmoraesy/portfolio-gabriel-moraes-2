@@ -48,7 +48,7 @@ const About = () => {
                 <div className="flex flex-col ms1000:flex-row gap-10">
                     <div className="flex-1 flex flex-col gap-4">
                         <div className="flex flex-col">
-                            <h1 className="text-xl sm:text-2xl mb-3 font-bold bg-gradient-to-r from-red-600 via-purple-600 to-blue-700 p-1 rounded-lg text-white">Objetivo</h1>
+                            <h1 className="text-xl sm:text-2xl mb-3 font-bold bg-clip-text text-transparent bg-gradient-to-r from-red-600 via-purple-600 to-blue-700">Objetivo</h1>
                             <div className="flex gap-4">
                                 <div className="flex flex-col items-center">
                                     <div className="w-4 h-4 border-2 dark:border-white border-black bg-transparent rounded-full " />
@@ -63,7 +63,7 @@ const About = () => {
                         </div>
 
                         <div className="flex flex-col">
-                            <h1 className="text-xl sm:text-2xl mb-3 font-bold bg-gradient-to-r from-red-600 via-purple-600 to-blue-700 p-1 rounded-lg text-white">Formações</h1>
+                            <h1 className="text-xl sm:text-2xl mb-3 font-bold bg-clip-text text-transparent bg-gradient-to-r from-red-600 via-purple-600 to-blue-700">Formações</h1>
                             <div className="flex gap-4">
                                 <div className="flex flex-col items-center">
                                     <div className="w-4 h-4 border-2 dark:border-white border-black bg-transparent rounded-full" />
@@ -71,7 +71,7 @@ const About = () => {
                                 </div>
                                 <div className="flex flex-col gap-2">
                                     <h1 className="text-lg font-semibold">Ensino Médio Técnico em Informática</h1>
-                                    <div className="p-2 rounded-lg bg-gray-scale-100 w-[102px] dark:text-black">2021 - 2023</div>
+                                    <div className="p-2 rounded-lg bg-gray-scale-100 w-[102px] dark:bg-transparent">2021 - 2023</div>
                                     <p>Escola Técnica Rezende Rammel</p>
                                     <p>Fiz o meu ensino médio junto com o técnico em informática onde tive a oportunidade de aprender sobre desenvolvimento front-end e back-end.</p>
                                 </div>
@@ -84,7 +84,7 @@ const About = () => {
                                 </div>
                                 <div className="flex flex-col gap-2">
                                     <h1 className="text-lg font-semibold">Graduação Ánalise e Desenvolvimento de Sistemas</h1>
-                                    <div className="p-2 rounded-lg bg-gray-scale-100 w-[102px] dark:text-black">2024 - 2026</div>
+                                    <div className="p-2 rounded-lg bg-gray-scale-100 w-[102px] dark:bg-transparent">2024 - 2026</div>
                                     <p>Centro Universitário Carioca</p>
                                     <p>A Universidade Unicarioca me ajudou a aprender sobre tecnologia. Tive a oportunidade de aprender desenvolvimento front-end, back-end e mobile.</p>
                                 </div>
@@ -94,15 +94,15 @@ const About = () => {
 
                     <div className="flex-1">
                         <div className="flex flex-col">
-                            <h1 className="text-xl sm:text-2xl mb-3 font-bold bg-gradient-to-r from-red-600 via-purple-600 to-blue-700 p-1 rounded-lg text-white">Experiência Profissional</h1>
+                            <h1 className="text-xl sm:text-2xl mb-3 font-bold bg-clip-text text-transparent bg-gradient-to-r from-red-600 via-purple-600 to-blue-700">Experiência Profissional</h1>
                             <div className="flex gap-4">
                                 <div className="flex flex-col items-center">
                                     <div className="w-4 h-4 border-2 dark:border-white border-black bg-transparent rounded-full" />
-                                    <div className="w-1 max-[990px]:h-[330px] max-[615px]:h-[340px] max-[503px]:h-[360px] max-[440px]:h-[390px] max-[391px]:h-[430px] max-[379px]:h-[460px] max-[360px]:h-[490px] h-[350px] dark:bg-white bg-black" />
+                                    <div className="w-1 max-[990px]:h-[330px] max-[615px]:h-[340px] max-[503px]:h-[360px] max-[440px]:h-[390px] max-[391px]:h-[430px] max-[379px]:h-[460px] max-[360px]:h-[490px] h-[340px] dark:bg-white bg-black" />
                                 </div>
                                 <div className="flex flex-col gap-2">
                                     <h1 className="text-lg font-semibold">Desenvolvedor Front-End - Javascript | Typescript | ReactJS | NextJS</h1>
-                                    <div className="p-2 rounded-lg bg-gray-scale-100 w-[195px] dark:text-black">02/2024 - até o momento</div>
+                                    <div className="p-2 rounded-lg bg-gray-scale-100 w-[195px] dark:bg-transparent">02/2024 - até o momento</div>
                                     <p>Wishme | Brasília, Brasil</p>
                                     <ul className="list-disc pl-4">
                                         <li>Realização de tarefas para manutenção e adição de páginas e componentes</li>
@@ -122,7 +122,7 @@ const About = () => {
                                 </div>
                                 <div className="flex flex-col gap-2">
                                     <h1 className="text-lg font-semibold">Estagiário Desenvolvedor</h1>
-                                    <div className="p-2 rounded-lg bg-gray-scale-100 w-[146px] dark:text-black">09/2022 - 02/2024</div>
+                                    <div className="p-2 rounded-lg bg-gray-scale-100 w-[146px] dark:bg-transparent">09/2022 - 02/2024</div>
                                     <p>Aprendizado e prática no Desenvolvimento de Sistemas, realização de processos de análise,
                                         documentação técnica e operacional, testes de software e controle de versionamento dos
                                         projetos.</p>

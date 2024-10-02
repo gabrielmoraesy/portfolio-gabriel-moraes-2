@@ -20,9 +20,9 @@ const HomeSection = () => {
                     </p>
 
                     <div className="flex flex-wrap items-center justify-center gap-3.5">
-                        <button className="px-3 py-2 border-2 border-gray rounded-lg dark:hover:bg-white dark:hover:text-black dark:hover:border-white hover:bg-black hover:text-white hover:border-black duration-300">Entrar em contato</button>
-                        <button className="px-3 py-2 border-2 border-gray rounded-lg dark:hover:bg-white dark:hover:text-black dark:hover:border-white hover:bg-black hover:text-white hover:border-black duration-300">Projetos</button>
-                        <button className="px-3 py-2 border-2 border-gray rounded-lg dark:hover:bg-white dark:hover:text-black dark:hover:border-white hover:bg-black hover:text-white hover:border-black duration-300">Currículo</button>
+                        <a className="p-1.5 px-3 border-2 border-gray rounded-lg dark:hover:bg-white dark:hover:text-black dark:hover:border-white hover:bg-black hover:text-white hover:border-black duration-300" href="#contact">Entrar em contato</a>
+                        <a className="p-1.5 px-3 border-2 border-gray rounded-lg dark:hover:bg-white dark:hover:text-black dark:hover:border-white hover:bg-black hover:text-white hover:border-black duration-300" href="#projects">Projetos</a>
+                        {/* <a className="px-3 py-2 border-2 border-gray rounded-lg dark:hover:bg-white dark:hover:text-black dark:hover:border-white hover:bg-black hover:text-white hover:border-black duration-300" href="">Currículo</a> */}
                     </div>
                 </div>
             </section>

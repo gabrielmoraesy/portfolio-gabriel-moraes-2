@@ -1,8 +1,9 @@
-import projectCineExplorer from '@/../public/images/project-cine-explorer-moraes.png'
-import projectControleDeProdutos from '@/../public/images/project-ControleDeProdutos.png'
-import projectMoraesBank from '@/../public/images/project-MoraesBank.png'
-import projectToDoList from '@/../public/images/project-TodoList.png'
-import projectPortfolio from '@/../public/images/projectPortfolio.png'
+import projectCineExplorer from '@/../public/images/projects/project-cine-explorer-moraes.png'
+import projectControleDeProdutos from '@/../public/images/projects/project-ControleDeProdutos.png'
+import projectMoraesBank from '@/../public/images/projects/project-MoraesBank.png'
+import projectToDoList from '@/../public/images/projects/project-TodoList.png'
+import projectPortfolio from '@/../public/images/projects/project-portfolio.png'
+import projectPortfolioActual from '@/../public/images/projects/project-portfolio-actual.png'
 import DetailsProjectModal from '@/components/Modals/DetailsProjectModal/DetailsProjectModal'
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip"
 import { Code, Ellipsis, Eye } from 'lucide-react'
@@ -11,45 +12,53 @@ import Image from "next/image";
 const ProjectsSection = () => {
     const projects = [
         {
-            image: projectPortfolio,
-            title: "Portfolio",
+            image: projectPortfolioActual,
+            title: "Portfolio Atual",
             description: "Este portfólio foi criado com o intuito de me apresentar para todos vocês e mostrar meus projetos e habilidades. Tem todos os links direcionados para minhas redes.",
-            technologies: ["HTML", "CSS", "JavaScript"]
-        },
-        {
-            image: projectControleDeProdutos,
-            title: "Portfolio",
-            description: "Este portfólio foi criado com o intuito de me apresentar para todos vocês e mostrar meus projetos e habilidades. Tem todos os links direcionados para minhas redes.",
-            technologies: ["HTML", "CSS", "JavaScript"]
-        },
-        {
-            image: projectMoraesBank,
-            title: "Portfolio",
-            description: "Este portfólio foi criado com o intuito de me apresentar para todos vocês e mostrar meus projetos e habilidades. Tem todos os links direcionados para minhas redes.",
-            technologies: ["HTML", "CSS", "JavaScript"]
-        },
-        {
-            image: projectToDoList,
-            title: "Portfolio",
-            description: "Este portfólio foi criado com o intuito de me apresentar para todos vocês e mostrar meus projetos e habilidades. Tem todos os links direcionados para minhas redes.",
-            technologies: ["HTML", "CSS", "JavaScript"]
-        },
-        {
-            image: projectPortfolio,
-            title: "Portfolio",
-            description: "Este portfólio foi criado com o intuito de me apresentar para todos vocês e mostrar meus projetos e habilidades. Tem todos os links direcionados para minhas redes.",
-            technologies: ["HTML", "CSS", "JavaScript"]
+            technologies: ["HTML", "CSS", "NextJS", "TypeScript", "Tailwind"],
+            linkCode: "https://github.com/gabrielmoraesy/portfolio-gabriel-moraes-2",
+            linkSeeProject: "https://portfolio-gabriel-moraes-2.vercel.app/"
         },
         {
             image: projectCineExplorer,
+            title: "Cine Explorer Moraes 🍿",
+            description: "Este site foi desenvolvido com o objetivo de resgatar dados da api do TMDB, ordenando filmes por mais populares, e conseguindo realizar a busca dos mesmos. Foi utilizado o sistema de rotas do next e a componetização do React, todo tipado com typescript para melhor funcionamento e futuras manutenções. Responsivo para todos os aparelhos e possui modo escuro para auxiliar na experiência do usuário.",
+            technologies: ["HTML", "CSS", "JavaScript", "TypeScript", "React", "NextJS", "Tailwind"],
+            linkCode: "https://github.com/gabrielmoraesy/cine-explorer-moraes",
+            linkSeeProject: "https://cine-explorer-moraes.vercel.app/"
+        }, 
+        {
+            image: projectMoraesBank,
+            title: "Moraes Bank",
+            description: "É um banco aonde possui uma tela de login, faz a verificação do cpf/senha, após entrar consegue fazer movimentações como sacar e depositar, também consegue resetar os valores.",
+            technologies: ["HTML", "CSS", "JavaScript"],
+            linkCode: "https://github.com/gabrielmoraesy/Moraes-Bank",
+            linkSeeProject: "https://gabrielmoraesy.github.io/Moraes-Bank/index.html#"
+        },
+        {
+            image: projectToDoList,
+            title: "To Do List",
+            description: "Foi meu primeiro projeto em React, nele temos um to Do List para você registrar suas tarefas diárias, podendo marcar as mesmas como concluídas ou até mesmo exclui-las.",
+            technologies: ["HTML", "CSS", "JavaScript", "React"],
+            linkCode: "https://github.com/gabrielmoraesy/Todo-List",
+            linkSeeProject: "https://todo-list-nine-gold.vercel.app/"
+
+        },
+        {
+            image: projectControleDeProdutos,
+            title: "Controle de Produtos - API Json",
+            description: "Esse projeto é um controle de produtos, utilizando API Json, com diversos métodos como: Get, Post, Patch e Delete. Podendo adicionar produtos, editar e remover, possui todos os tratamentos necéssarios para um bom funcionamento.",
+            technologies: ["HTML", "CSS", "JavaScript", "React"],
+            linkCode: "https://github.com/gabrielmoraesy/Controle-De-Produtos-API-Json",
+            linkSeeProject: "https://controle-de-produtos-api-json.vercel.app/"
+        },
+        {
+            image: projectPortfolio,
             title: "Portfolio",
             description: "Este portfólio foi criado com o intuito de me apresentar para todos vocês e mostrar meus projetos e habilidades. Tem todos os links direcionados para minhas redes.",
-            technologies: ["HTML", "CSS", "JavaScript"]
-        }, {
-            image: projectPortfolio,
-            title: "New Ways",
-            description: "Este portfólio foi criado com o intuito de me apresentar para todos vocês e mostrar meus projetos e habilidades. Tem todos os links direcionados para minhas redes.",
-            technologies: ["HTML", "CSS", "JavaScript"]
+            technologies: ["HTML", "CSS", "JavaScript"],
+            linkCode: "https://github.com/gabrielmoraesy/portfolio-gabriel-moraes", 
+            linkSeeProject: "https://portfolio-gabriel-moraes-two.vercel.app/"
         },
     ]
 
@@ -70,21 +79,21 @@ const ProjectsSection = () => {
                             <TooltipProvider>
                                 <Tooltip>
                                     <TooltipTrigger className='text-white bg-black p-4 rounded-full w-[56px] h-[56px]'>
-                                        <a data-state="closed" href="#">
+                                        <a data-state="closed" href={project.linkSeeProject} target='_blank'>
                                             <Eye />
                                         </a>
                                         <TooltipContent>
-                                            <p>Ver projeto</p>
+                                            <a href={project.linkSeeProject} target='_blank'>Ver projeto</a>
                                         </TooltipContent>
                                     </TooltipTrigger>
                                 </Tooltip>
                                 <Tooltip>
                                     <TooltipTrigger className='text-white bg-black p-4 rounded-full w-[56px] h-[56px]'>
-                                        <a data-state="closed" href="#">
+                                        <a data-state="closed" href={project.linkCode} target='_blank'>
                                             <Code />
                                         </a>
                                         <TooltipContent>
-                                            <p>Código</p>
+                                            <a href={project.linkCode} target='_blank'>Código</a>
                                         </TooltipContent>
                                     </TooltipTrigger>
                                 </Tooltip>

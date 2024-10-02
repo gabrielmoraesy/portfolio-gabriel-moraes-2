@@ -13,20 +13,20 @@ const ContactSection = () => {
                         Estou sempre aberto a novas oportunidades e colaborações. sinta-se à vontade para me enviar uma mensagem através deste formulário. Vou responder o mais breve possível!
                     </p>
 
-                    <div className="flex flex-col sm:flex-row gap-2">
-                        <div className="flex gap-2 items-center">
+                    <div className="flex flex-col sm:flex-row gap-4">
+                        <div className="flex gap-1 items-center">
                             <Linkedin />
-                            <a href="#">Linkedin</a>
+                            <a href="https://www.linkedin.com/in/gabrielmoraespires/" target="_blank">Linkedin</a>
                         </div>
 
-                        <div className="flex gap-2 items-center">
+                        <div className="flex gap-1 items-center">
                             <Mail />
-                            <a href="#">ygabrielmoraes@gmail.com</a>
+                            <a href="mailto:ygabrielmoraes@gmail.com" target="_blank">ygabrielmoraes@gmail.com</a>
                         </div>
 
-                        <div className="flex gap-2 items-center">
+                        <div className="flex gap-1 items-center">
                             <Smartphone />
-                            <a href="#">(21) 96427-7805</a>
+                            <a href="https://wa.me/5521964277805/" target="_blank">(21) 96427-7805</a>
                         </div>
                     </div>
                 </div>
