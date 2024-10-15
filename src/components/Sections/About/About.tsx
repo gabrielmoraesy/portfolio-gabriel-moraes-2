@@ -56,7 +56,7 @@ const About = () => {
                                 </div>
                                 <div className="flex flex-col gap-2">
                                     <h1 className="text-lg font-semibold">Gabriel Moraes</h1>
-                                    <p>Estou em busca de uma oportunidade como Front-End Developer Júnior para dar continuidade na minha carreira.</p>
+                                    <p>Estou em busca de uma oportunidade como Desenvolvedor Front End ou FullStack para dar continuidade na minha carreira.</p>
                                     <p>ygabrielmoraes@gmail.com | (21) 96427-7805</p>
                                 </div>
                             </div>
