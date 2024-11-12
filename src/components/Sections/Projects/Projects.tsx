@@ -4,6 +4,7 @@ import projectMoraesBank from '@/../public/images/projects/project-MoraesBank.pn
 import projectToDoList from '@/../public/images/projects/project-TodoList.png'
 import projectPortfolio from '@/../public/images/projects/project-portfolio.png'
 import projectPortfolioActual from '@/../public/images/projects/project-portfolio-actual.png'
+import projectMoraesFlix from '@/../public/images/projects/project-moraes-flix.png'
 import DetailsProjectModal from '@/components/Modals/DetailsProjectModal/DetailsProjectModal'
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip"
 import { Code, Ellipsis, Eye } from 'lucide-react'
@@ -16,23 +17,32 @@ const ProjectsSection = () => {
             title: "Portfolio Atual",
             description: "Este portfólio foi criado com o intuito de me apresentar para todos vocês e mostrar meus projetos e habilidades. Tem todos os links direcionados para minhas redes.",
             technologies: ["HTML", "CSS", "NextJS", "TypeScript", "Tailwind"],
-            linkCode: "https://github.com/gabrielmoraesy/portfolio-gabriel-moraes-2",
+            linkCodeFrontEnd: "https://github.com/gabrielmoraesy/portfolio-gabriel-moraes-2",
             linkSeeProject: "https://portfolio-gabriel-moraes-2.vercel.app/"
+        },
+        {
+            image: projectMoraesFlix,
+            title: "Moraes Flix",
+            description: "O MoraesFlix é uma aplicação de gerenciamento de filmes, permitindo que os usuários adicionem, editem e excluam seus filmes favoritos, além de deixarem avaliações. Com uma interface amigável, o MoraesFlix facilita a gestão de suas coleções de filmes e avaliações.",
+            technologies: ["HTML", "CSS", "JavaScript", "TypeScript", "React", "Tailwind", "NodeJS", "Express", "Prisma", "PostgreSQL, Zod, React Hook Form, Axios, Docker"],
+            linkCodeFrontEnd: "https://github.com/gabrielmoraesy/moraes-flix-front-end",
+            linkCodeBackEnd: "https://github.com/gabrielmoraesy/moraes-flix-front-end",
+            linkSeeProject: "https://moraes-flix-front-end.vercel.app/"
         },
         {
             image: projectCineExplorer,
             title: "Cine Explorer Moraes 🍿",
             description: "Este site foi desenvolvido com o objetivo de resgatar dados da api do TMDB, ordenando filmes por mais populares, e conseguindo realizar a busca dos mesmos. Foi utilizado o sistema de rotas do next e a componetização do React, todo tipado com typescript para melhor funcionamento e futuras manutenções. Responsivo para todos os aparelhos e possui modo escuro para auxiliar na experiência do usuário.",
             technologies: ["HTML", "CSS", "JavaScript", "TypeScript", "React", "NextJS", "Tailwind"],
-            linkCode: "https://github.com/gabrielmoraesy/cine-explorer-moraes",
+            linkCodeFrontEnd: "https://github.com/gabrielmoraesy/cine-explorer-moraes",
             linkSeeProject: "https://cine-explorer-moraes.vercel.app/"
-        }, 
+        },
         {
             image: projectMoraesBank,
             title: "Moraes Bank",
             description: "É um banco aonde possui uma tela de login, faz a verificação do cpf/senha, após entrar consegue fazer movimentações como sacar e depositar, também consegue resetar os valores.",
             technologies: ["HTML", "CSS", "JavaScript"],
-            linkCode: "https://github.com/gabrielmoraesy/Moraes-Bank",
+            linkCodeFrontEnd: "https://github.com/gabrielmoraesy/Moraes-Bank",
             linkSeeProject: "https://gabrielmoraesy.github.io/Moraes-Bank/index.html#"
         },
         {
@@ -40,7 +50,7 @@ const ProjectsSection = () => {
             title: "To Do List",
             description: "Foi meu primeiro projeto em React, nele temos um to Do List para você registrar suas tarefas diárias, podendo marcar as mesmas como concluídas ou até mesmo exclui-las.",
             technologies: ["HTML", "CSS", "JavaScript", "React"],
-            linkCode: "https://github.com/gabrielmoraesy/Todo-List",
+            linkCodeFrontEnd: "https://github.com/gabrielmoraesy/Todo-List",
             linkSeeProject: "https://todo-list-nine-gold.vercel.app/"
 
         },
@@ -49,7 +59,7 @@ const ProjectsSection = () => {
             title: "Controle de Produtos - API Json",
             description: "Esse projeto é um controle de produtos, utilizando API Json, com diversos métodos como: Get, Post, Patch e Delete. Podendo adicionar produtos, editar e remover, possui todos os tratamentos necéssarios para um bom funcionamento.",
             technologies: ["HTML", "CSS", "JavaScript", "React"],
-            linkCode: "https://github.com/gabrielmoraesy/Controle-De-Produtos-API-Json",
+            linkCodeFrontEnd: "https://github.com/gabrielmoraesy/Controle-De-Produtos-API-Json",
             linkSeeProject: "https://controle-de-produtos-api-json.vercel.app/"
         },
         {
@@ -57,7 +67,7 @@ const ProjectsSection = () => {
             title: "Portfolio",
             description: "Este portfólio foi criado com o intuito de me apresentar para todos vocês e mostrar meus projetos e habilidades. Tem todos os links direcionados para minhas redes.",
             technologies: ["HTML", "CSS", "JavaScript"],
-            linkCode: "https://github.com/gabrielmoraesy/portfolio-gabriel-moraes", 
+            linkCodeFrontEnd: "https://github.com/gabrielmoraesy/portfolio-gabriel-moraes",
             linkSeeProject: "https://portfolio-gabriel-moraes-two.vercel.app/"
         },
     ]
@@ -89,14 +99,26 @@ const ProjectsSection = () => {
                                 </Tooltip>
                                 <Tooltip>
                                     <TooltipTrigger className='text-white bg-black p-4 rounded-full w-[56px] h-[56px]'>
-                                        <a data-state="closed" href={project.linkCode} target='_blank'>
+                                        <a data-state="closed" href={project.linkCodeFrontEnd} target='_blank'>
                                             <Code />
                                         </a>
                                         <TooltipContent>
-                                            <a href={project.linkCode} target='_blank'>Código</a>
+                                            <a href={project.linkCodeFrontEnd} target='_blank'>Código FrontEnd</a>
                                         </TooltipContent>
                                     </TooltipTrigger>
                                 </Tooltip>
+                                {project.linkCodeBackEnd &&
+                                    <Tooltip>
+                                        <TooltipTrigger className='text-white bg-black p-4 rounded-full w-[56px] h-[56px]'>
+                                            <a data-state="closed" href={project.linkCodeBackEnd} target='_blank'>
+                                                <Code />
+                                            </a>
+                                            <TooltipContent>
+                                                <a href={project.linkCodeBackEnd} target='_blank'>Código BackEnd</a>
+                                            </TooltipContent>
+                                        </TooltipTrigger>
+                                    </Tooltip>
+                                }
                                 <Tooltip>
                                     <TooltipTrigger className='text-white bg-black p-4 rounded-full w-[56px] h-[56px]'>
                                         <DetailsProjectModal project={project}>

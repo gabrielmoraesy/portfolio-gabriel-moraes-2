@@ -11,6 +11,11 @@ import shadCnIcon from '@/../public/images/tecnologiesIcons/shadcn.svg'
 import radixIcon from '@/../public/images/tecnologiesIcons/radix.svg'
 import framerIcon from '@/../public/images/tecnologiesIcons/framer-motion.svg'
 import nodeIcon from '@/../public/images/tecnologiesIcons/nodejs.svg'
+import expressIcon from '@/../public/images/tecnologiesIcons/express.svg'
+import fastifyIcon from '@/../public/images/tecnologiesIcons/fastify.svg'
+import nestJsIcon from '@/../public/images/tecnologiesIcons/NestJS.svg'
+import postgreIcon from '@/../public/images/tecnologiesIcons/postgres.svg'
+import sqlServerIcon from '@/../public/images/tecnologiesIcons/sqlServer.svg'
 
 const technologies = [
     {
@@ -60,6 +65,26 @@ const technologies = [
     {
         icon: nodeIcon,
         title: "Node"
+    },
+    {
+        icon: expressIcon,
+        title: "Express"
+    },
+    {
+        icon: fastifyIcon,
+        title: "Fastify"
+    },
+    {
+        icon: nestJsIcon,
+        title: "NestJs"
+    },
+    {
+        icon: postgreIcon,
+        title: "PostgreSQL"
+    },
+    {
+        icon: sqlServerIcon,
+        title: "SQL Server"
     },
 ]
 const KnowledgeSection = () => {
