@@ -22,7 +22,7 @@ const MenuMobile = ({ children }: MenuMobileProps) => {
     <div className="flex ms1000:hidden">
       <Sheet>
         <SheetTrigger>{children}</SheetTrigger>
-        <SheetContent side='top' className="flex flex-col px-4">
+        <SheetContent side='top' className="flex flex-col px-6">
           <div className="flex flex-col gap-3 uppercase text-sm dark:text-white">
             <a href="#home" className="dark:hover:bg-gray hover:bg-gray-scale-100 p-2 rounded-lg font-medium">Início</a>
             <a href="#about" className="dark:hover:bg-gray hover:bg-gray-scale-100 p-2 rounded-lg font-medium">Sobre</a>

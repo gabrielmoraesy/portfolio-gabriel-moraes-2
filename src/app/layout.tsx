@@ -17,7 +17,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className="font-poppins">
+      <body>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"

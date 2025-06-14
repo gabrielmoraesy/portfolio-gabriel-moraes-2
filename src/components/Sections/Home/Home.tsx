@@ -1,29 +1,66 @@
+'use client'
 import { Avatar, AvatarImage } from "@/components/ui/avatar"
 import profilePhoto from '@/../public/images/home/profilePhoto.jpg'
 import Image from "next/image";
 import homeFundo from '@/../public/images/home/homeFundo.png'
+import { motion } from 'framer-motion';
 
 const HomeSection = () => {
     return (
         <div>
-            <Image src={homeFundo.src} width={2048} height={1365} quality={100} alt="Fundo" className="hidden dark:block object-cover w-screen h-screen absolute opacity-15" loading="lazy" />
-
-            <section className="relative max-w-[1320px] mx-auto flex flex-col justify-center items-center gap-4 h-[95vh] px-6">
+            <section id="inicio" className="relative max-w-[1320px] mx-auto flex flex-col justify-center items-center gap-4 min-h-screen flex-grow px-6">
                 <div className="flex flex-col items-center gap-3 sm:max-w-[800px]">
-                    <Avatar className="w-[200px] h-[200px]">
-                        <AvatarImage src={profilePhoto.src} className="object-cover" />
-                    </Avatar>
+                    <motion.div
+                        initial={{ opacity: 0, y: -40 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.8, delay: 0.1, type: 'spring' }}
+                    >
+                        <Avatar className="w-[200px] h-[200px]">
+                            <AvatarImage src={profilePhoto.src} className="object-cover" />
+                        </Avatar>
+                    </motion.div>
 
-                    <h1 className="text-center ms1000:leading-[50px] font-bold text-3xl md:text-5xl"><span className="bg-clip-text text-transparent bg-gradient-to-r from-red-600 via-purple-600 to-blue-700">Olá, meu nome é Gabriel,</span> sou Desenvolvedor Front-End.</h1>
-                    <p className="text-base text-center sm:max-w-[600px]">
-                        Minha paixão pelo Desenvolvimento web impulsiona-me a criar interfaces elegantes, interativas e responsivas, proporcionando experiências memoráveis aos usuários.
-                    </p>
+                    <motion.h1
+                        initial={{ opacity: 0, y: 40 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.8, delay: 0.3, type: 'spring' }}
+                        className="text-center ms1000:leading-[50px] font-bold text-3xl md:text-5xl"
+                    >
+                        <span className="text-blue-500">Olá, me chamo Gabriel,</span> sou Desenvolvedor Front-End.
+                    </motion.h1>
+                    <motion.p
+                        initial={{ opacity: 0, y: 40 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.8, delay: 0.5, type: 'spring' }}
+                        className="text-base text-center sm:max-w-[600px]"
+                    >
+                        Crio interfaces elegantes, interativas e responsivas, proporcionando experiências memoráveis aos usuários. Sou Desenvolvedor Front end e criador de conteúdo no <a href="https://www.instagram.com/moraesdev/" target="_blank" className="text-blue-500 hover:text-blue-600">@moraesdev</a>.
+                    </motion.p>
 
-                    <div className="flex flex-wrap items-center justify-center gap-3.5">
-                        <a className="p-1.5 px-3 border-2 border-gray rounded-lg dark:hover:bg-white dark:hover:text-black dark:hover:border-white hover:bg-black hover:text-white hover:border-black duration-300" href="#contact">Entrar em contato</a>
-                        <a className="p-1.5 px-3 border-2 border-gray rounded-lg dark:hover:bg-white dark:hover:text-black dark:hover:border-white hover:bg-black hover:text-white hover:border-black duration-300" href="#projects">Projetos</a>
-                        {/* <a className="px-3 py-2 border-2 border-gray rounded-lg dark:hover:bg-white dark:hover:text-black dark:hover:border-white hover:bg-black hover:text-white hover:border-black duration-300" href="">Currículo</a> */}
-                    </div>
+                    <motion.div
+                        initial={{ opacity: 0, y: 40 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.8, delay: 0.7, type: 'spring' }}
+                        className="flex flex-wrap items-center justify-center gap-4 mt-4"
+                    >
+                        <a
+                            href="#contato"
+                            className="relative overflow-hidden font-bold py-2 px-6 rounded-lg shadow border-2 border-transparent bg-blue-500 text-white transition-colors duration-300 group"
+                        >
+                            <span className="relative z-10 transition-colors duration-300 group-hover:text-white">Entrar em contato</span>
+                            <span className="absolute left-0 top-0 h-full w-0 bg-blue-600 group-hover:w-full transition-all duration-500 ease-out z-0" style={{ borderRadius: '0.5rem' }}></span>
+                        </a>
+                        <a
+                            href="/Curriculo-Gabriel-Moraes.pdf"
+                            download
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="relative overflow-hidden font-bold py-2 px-6 rounded-lg shadow border-2 border-white dark:border-white bg-transparent text-black dark:text-white transition-colors duration-300 group"
+                        >
+                            <span className="relative z-10 transition-colors duration-300 group-hover:text-black dark:group-hover:text-black">Baixar meu currículo</span>
+                            <span className="absolute left-0 top-0 h-full w-0 bg-white group-hover:w-full transition-all duration-500 ease-out z-0" style={{ borderRadius: '0.5rem' }}></span>
+                        </a>
+                    </motion.div>
                 </div>
             </section>
         </div >

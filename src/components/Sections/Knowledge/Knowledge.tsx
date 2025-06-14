@@ -1,3 +1,5 @@
+'use client'
+
 import Image from "next/image";
 import htmlIcon from '@/../public/images/tecnologiesIcons/html.svg'
 import cssIcon from '@/../public/images/tecnologiesIcons/css.svg'
@@ -16,6 +18,7 @@ import fastifyIcon from '@/../public/images/tecnologiesIcons/fastify.svg'
 import nestJsIcon from '@/../public/images/tecnologiesIcons/NestJS.svg'
 import postgreIcon from '@/../public/images/tecnologiesIcons/postgres.svg'
 import sqlServerIcon from '@/../public/images/tecnologiesIcons/sqlServer.svg'
+import { motion } from 'framer-motion';
 
 const technologies = [
     {
@@ -86,21 +89,34 @@ const technologies = [
         icon: sqlServerIcon,
         title: "SQL Server"
     },
+    {
+        icon: reactIcon,
+        title: "React Native"
+    },
 ]
 const KnowledgeSection = () => {
     return (
-        <section id="knowledge" className="max-w-[1320px] px-6 mx-auto flex flex-col justify-center items-start gap-6 min-h-[30vh]">
+        <motion.section
+            id="conhecimentos"
+            className="max-w-[1320px] px-6 mx-auto flex flex-col justify-center items-start gap-6 min-h-[30vh]"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.2 }}
+            transition={{ duration: 0.6, ease: 'easeOut' }}
+        >
             <div className='flex flex-col leading-10'>
                 <h1 className='text-2xl sm:text-3xl'>Conhecimentos e</h1>
-                <h1 className='text-2xl sm:text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-red-600 via-purple-600 to-blue-700'>Tecnologias.</h1>
+                <h1 className='text-2xl sm:text-3xl font-bold text-blue-500'>Tecnologias.</h1>
             </div>
             <div className="w-full flex justify-center flex-wrap gap-2">
-                {technologies.map(tech => <div className="max-[416px]:w-full w-[180px] relative flex flex-col items-center justify-center gap-2 p-2 py-4 rounded-lg bg-[#ececec] dark:bg-[#121212]">
-                    <Image src={tech.icon} width={44} height={44} className="w-[44px] h-[44px]" quality={100} alt="imagem do projeto" />
-                    <p className="font-bold uppercase text-sm">{tech.title}</p>
-                </div>)}
+                {technologies.map(tech => (
+                    <div className="max-[416px]:w-full w-[180px] relative flex flex-col items-center justify-center gap-2 p-2 py-4 rounded-lg bg-[#ececec] dark:bg-[#121212] transition-transform duration-200 hover:scale-110 cursor-pointer">
+                        <Image src={tech.icon} width={44} height={44} className="w-[44px] h-[44px]" quality={100} alt="imagem do projeto" />
+                        <p className="font-bold uppercase text-sm">{tech.title}</p>
+                    </div>
+                ))}
             </div>
-        </section>
+        </motion.section>
     );
 }
 
