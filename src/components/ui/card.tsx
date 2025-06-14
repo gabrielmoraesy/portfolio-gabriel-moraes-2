@@ -4,8 +4,8 @@ import React from 'react';
 import { motion } from 'framer-motion';
 
 interface CardProps {
-  title: string;
-  subtitle?: string;
+  title: React.ReactNode;
+  subtitle?: React.ReactNode;
   date?: string;
   children?: React.ReactNode;
   className?: string;

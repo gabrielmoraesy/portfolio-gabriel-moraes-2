@@ -24,9 +24,9 @@ const DetailsProjectModal = ({ children, project }: IDetailsProjectModal) => {
                     <p className="text-sm">{project.description}</p>
 
                     <div className="flex flex-wrap gap-1.5">
-                        {project.technologies.map(tech => (
+                        {project.technologies.map((tech, idx) => (
                             <p
-                                key={tech}
+                                key={idx}
                                 className="transition-transform duration-200 hover:scale-110 cursor-pointer px-2 py-1 rounded bg-gray-100 dark:bg-[#232323] border border-gray-200 dark:border-gray-700"
                             >
                                 {tech}
